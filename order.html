@@ -1,0 +1,98 @@
+<head> 
+  <meta charset="utf-8" />
+
+  <meta name="author" content="Rebecca Pei">
+  <meta name="keywords" content="67250 Webdevelopment Project">
+  <meta name="description" content="Webdevelopment Project for Prantl's">
+
+  <title>Prantl's Bakery</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/order_styles.css">
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js "></script>
+  
+</head>
+
+
+
+  <body>
+    <div class="content">
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Customer Online Order Form</h1>
+      </div>
+
+      <p><strong>Note:</strong> You can place an order for <strong>ONLY</strong> the Burnt Almond Torte (8"x3").</p>
+      <p><strong>Click to go back to <a href="index.html">Index Page</a></p>
+      <div class="row">
+         <form onsubmit="return validate2();" >
+
+          <div class="col-md-4">
+            <label for="firstname">First Name:*</label><br/>
+            <input type="text" name="firstname" id="firstname" required> <br/>
+            <label for="lastname">Last Name:*</label><br/>
+            <input type="text" name="lastname" id="lastname" required> <br/>
+            <label for="email">Email:*</label><br/>
+            <input type="email" name="email" id="email" required> <br/>
+            <label for="phone">Phone number:*</label><br/>
+            <input type="text" id="phone" name="phone" required><br/>
+          </div>
+          <div class="col-md-4">
+            <label for="address">Billing Address Line 1:*</label><br/>
+            <input type="text" name="address1" id="address1" required> <br/>
+            <label for="address">Address Line 2:</label><br/>
+            <input type="text" name="address2" id="address2"> <br/>
+            <label for="address">City:</label><br/>
+            <input type="text" name="address3" id="address3"> <br/>
+            <label for="zipcode">Zipcode:</label><br/>
+            <input type="text" name="zipcode" id="zipcode"> <br/>
+          </div>
+          <div class="col-md-4">
+            <label for="quantity">Quantity of cakes:*</label><br/>
+            <select name="quantity" required>
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <br/>
+            </select><br/>
+
+            <label for="pickup">Pickup location:*</label><br/>
+            <select name="pickup">
+              <option value="Downtown" selected>Downtown</option>
+              <option value="Shadyside">Shadyside</option>
+              <br/>
+            </select><br/>
+
+            <label for="pickupDate">Pickup Date:*</label><br/>
+            <input type="date" id="pickupDate" name="pickupDate" value="" required><br/>
+
+            <label for="pickupTime">Pickup Time:*</label><br/>
+            <input type="time" id="pickupTime" name="pickupTime" value="" required><br/><br/>
+
+            <button id="submit_button" alt="Submit" value="Submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+     
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>

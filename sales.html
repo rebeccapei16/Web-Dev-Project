@@ -1,0 +1,222 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+	<meta charset="utf-8" />
+
+	<meta name="author" content="Rebecca Pei">
+	<meta name="keywords" content="67250 Webdevelopment Project">
+	<meta name="description" content="Webdevelopment Project for Prantl's">
+
+	<title>Prantl's Bakery</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js "></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+		$('#sales_container1').highcharts({
+			chart: {	
+        	type: 'pie',
+        	options3d: {
+            enabled: true,
+            alpha: 45,
+            beta: 0
+        	}
+    		},
+	    	title: {
+	        	text: 'Most Popular Item, 2017'
+	    	},
+	    	tooltip: {
+	        	pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	    	},
+	    	plotOptions: {
+	        	pie: {
+	            	allowPointSelect: true,
+	            	cursor: 'pointer',
+	            	depth: 35,
+	            	dataLabels: {
+	                	enabled: true,
+	                	format: '{point.name}'
+	            	}
+	        	}
+	    	},
+	    	series: [{
+	        	type: 'pie',
+	        	name: 'Browser share',
+	        	data: [
+	            	['Coconut Chocolate Macaroon', 26.8],
+	            	['Burnt Almond Torte', 45.0],
+	            	{
+	                	name: 'Almond Torte',
+	                	y: 12.8,
+	                	sliced: true,
+	                	selected: true
+	            	},
+	            	['Others', 8.5],
+	            	['Red Velvet Cup', 6.2],
+	            	['Almond Coffee Cake', 0.7]
+	        	]
+	    	}]
+	    });
+	});
+	</script>
+
+
+		<script type="text/javascript">
+		$(function () {
+		$('#sales_container2').highcharts({
+			chart: {
+		    type: 'column',
+		    	options3d: {
+		            enabled: true,
+		            alpha: 15,
+		            beta: 15,
+		            viewDistance: 25,
+		            depth: 40
+		        }
+		    },
+
+		    title: {
+		        text: 'Total Sales Data, 2017'
+		    },
+
+		    xAxis: {
+		        categories: ['Burnt Almond Torte', 'Coconut Chocolate Macaroon', 'Red Velvet Cup', 'Almond Coffee Cake', 'Others'],
+		        labels: {
+		            skew3d: true,
+		            style: {
+		                fontSize: '16px'
+		            }
+		        }
+		    },
+
+		    yAxis: {
+		        allowDecimals: false,
+		        min: 0,
+		        title: {
+		            text: 'Number of sales',
+		            skew3d: true
+		        }
+		    },
+
+		    tooltip: {
+		        headerFormat: '<b>{point.key}</b><br>',
+		        pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y} / {point.stackTotal}'
+		    },
+
+		    plotOptions: {
+		        column: {
+		            stacking: 'normal',
+		            depth: 40
+		        }
+		    },
+
+		    series: [{
+		        name: 'Shadyside',
+		        data: [938, 234, 645, 362, 142],
+		    }, {
+		        name: 'Downtown',
+		        data: [837, 342, 216, 534, 398],
+		    }]
+	    });
+	});
+	</script>
+
+
+
+
+</head>
+    
+<body>
+
+<div id="container">
+	<header id="header">
+		<div id="header_container">
+			<div></div>
+			<div id="header_logo">
+				<a href="index.html"><img id="logo" src="images/logo.png" alt="Home"  /></a>
+			</div>
+			<div></div>
+			<div id="nav_container">
+				<div id="nav1">
+						<h1>Say Something Sweet &hearts;</h1>
+				</div>
+				<div id="nav2">
+						<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook.png"></a>
+						<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+						<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+				</div>
+				<div id="navbar">					
+					<nav>
+					    <a href="about.html">About</a>
+					    <div class="dropdown">
+					    	<a class="dropbtn" href="catering.html">Catering</a>
+					    	<div class="dropdown-content">
+					    		<a href="wedding.html">Wedding</a>
+					    		<a href="celebration.html">Celebration</a>
+					    		<a href="holiday.html">Holiday</a>
+					    	</div>
+					    </div>
+					    <a href="store.html">Store</a>
+					    <a href="press.html">Press</a>
+					    <a href="order.html">Order</a>
+					    <a class="selected" href="sales.html">Sales</a>
+					    <a href="contact.html">Contact</a> 
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<hr/>
+
+	<div id="sales_content">
+		<div id="contact_text">
+			Sales Data Visualization
+		</div>
+		<div id="sales_wrapper">
+			<div></div>
+			<div id="sales_container1"></div>
+			<div id="sales_container2"></div>
+			<div></div>
+		</div>
+	</div> <!-- Close content -->
+	
+	<footer>
+		<hr/>
+		<br/>
+		<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook.png"></a>
+		<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+		<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+		<br/>
+		&hearts; Say Something Sweet &hearts;
+		<br/>
+		&hearts; &copy; Prantl's Bakery 2018 &hearts;<br/>
+		<a href="about.html">About</a>
+		<a href="catering.html">Catering</a>
+		<a href="store.html">Store</a>
+		<a href="press.html">Press</a>
+		<a href="order.html">Order</a>
+		<a href="sales.html">Sales</a>
+		<a href="contact.html">Contact</a> 
+	    <br/>
+	    <br/>
+	    <hr>
+	</footer>
+
+</div> <!-- Close container -->	
+</body>
+</html>

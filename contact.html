@@ -1,0 +1,160 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+	<meta charset="utf-8" />
+
+	<meta name="author" content="Rebecca Pei">
+	<meta name="keywords" content="67250 Webdevelopment Project">
+	<meta name="description" content="Webdevelopment Project for Prantl's">
+
+	<title>Prantl's Bakery</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js "></script>
+	
+</head>
+    
+<body>
+
+<div id="container">
+	<header id="header">
+		<div id="header_container">
+			<div></div>
+			<div id="header_logo">
+				<a href="index.html"><img id="logo" src="images/logo.png" alt="Home"  /></a>
+			</div>
+			<div></div>
+			<div id="nav_container">
+				<div id="nav1">
+						<h1>Say Something Sweet &hearts;</h1>
+				</div>
+				<div id="nav2">
+						<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook.png"></a>
+						<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+						<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+				</div>
+				<div id="navbar">					
+					<nav>
+					    <a href="about.html">About</a>
+					    <div class="dropdown">
+					    	<a class="dropbtn" href="catering.html">Catering</a>
+					    	<div class="dropdown-content">
+					    		<a href="wedding.html">Wedding</a>
+					    		<a href="celebration.html">Celebration</a>
+					    		<a href="holiday.html">Holiday</a>
+					    	</div>
+					    </div>
+					    <a href="store.html">Store</a>
+					    <a href="press.html">Press</a>
+					    <a href="order.html">Order</a>
+					    <a href="sales.html">Sales</a>
+					    <a class="selected" href="contact.html">Contact</a> 
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<hr/>
+
+	<div id="contact_content">
+		<div id="contact_text">
+			We'd love to hear from you!
+		</div>
+
+		<div id="contact_wrapper">
+			<div id="contact_placeholder">
+			</div>
+			<div id="contact_box1">
+				<form onsubmit="return validate();" >
+					<label for="name"></label>
+					<input type="text" name="name" id="name" placeholder="Your Name*" required> <br/>
+					<label for="email"></label> <br/>
+					<input type="email" name="email" id="email" placeholder="Your_Email@google.com*" required> <br/>
+					<label for="zipcode"></label> <br/>
+					<input type="text" name="zipcode" id="zipcode" placeholder="Your Zipcode"> <br/><br/>
+					<label id="label_subscribe">Subscribe to Prantl’s mailing list:</label><br/>
+					<div id="subcribing">
+						<label class="subscribe_button">Yes
+							<input type="checkbox" name="subscribe" value="yes" >
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					
+					<label fr="message"></label>
+					<textarea id="message" name="message" value="Type your Message" rows="10" cols="50" maxlength="1000" placeholder="Message"></textarea><br/>
+					
+					<button id="submit_button" alt="Submit" value="Submit">submit</button>
+				</form>
+			</div>
+
+			<div id="contact_placeholder">
+			</div>
+
+
+			<div id="contact_box2">
+				<div id="contact_box2_wrapper">
+					<div>
+						<h2>ShadySide</h2>
+					</div>
+					<div>
+						<h1>5525 Walnut Street</h1>
+						<h1>Phone number: 412-621-2092</h1>
+						<h1>Email: info@prantlsbakery.com</h1>
+					</div>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48580.90042344877!2d-80.00249114441307!3d40.44635766644467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1521736192851" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div>
+				</div>
+				<div id="contact_box2_wrapper">
+					<div>
+						<h2>Downtown</h2>
+					</div>
+					<div>
+						<h1>438 Market Street</h1>
+						<h1>General Information: 412-471-6861</h1>
+						<h1>Email: infoms@prantlsbakery.com</h1>
+					</div>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5421725388537!2d-80.00426918464234!3d40.441135562078905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1521736848260" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div id="contact_placeholder">
+			</div>
+		</div>
+
+	</div> <!-- Close content -->
+	
+	<footer>
+		<hr/>
+		<br/>
+		<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook.png"></a>
+		<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+		<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+		<br/>
+		&hearts; Say Something Sweet &hearts;
+		<br/>
+		&hearts; &copy; Prantl's Bakery 2018 &hearts;<br/>
+		<a href="about.html">About</a>
+		<a href="catering.html">Catering</a>
+		<a href="store.html">Store</a>
+		<a href="press.html">Press</a>
+		<a href="order.html">Order</a>
+		<a href="sales.html">Sales</a>
+		<a href="contact.html">Contact</a> 
+	    <br/>
+	    <br/>
+	    <hr>
+	</footer>
+
+</div> <!-- Close container -->	
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+	<meta charset="utf-8" />
+
+	<meta name="author" content="Rebecca Pei">
+	<meta name="keywords" content="67250 Webdevelopment Project">
+	<meta name="description" content="Webdevelopment Project for Prantl's">
+
+	<title>Prantl's Bakery</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js "></script>
+
+    <script type="text/javaScript">
+    	$(function() {
+    		$('#gallery a').lightBox();
+    	});
+    </script>
+
+</head>
+    
+<body>
+
+<div id="container">
+	<header id="header">
+		<div id="header_container">
+			<div></div>
+			<div id="header_logo">
+				<a href="index.html"><img id="logo" src="images/logo.png" alt="Home"  /></a>
+			</div>
+			<div></div>
+			<div id="nav_container">
+				<div id="nav1">
+						<h1>Say Something Sweet &hearts;</h1>
+				</div>
+				<div id="nav2">
+						<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook.png"></a>
+						<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+						<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+				</div>
+				<div id="navbar">					
+					<nav>
+					    <a href="about.html">About</a>
+					    <div class="dropdown">
+					    	<a class="dropbtn" href="catering.html">Catering</a>
+					    	<div class="dropdown-content">
+					    		<a href="wedding.html">Wedding</a>
+					    		<a href="celebration.html">Celebration</a>
+					    		<a href="holiday.html">Holiday</a>
+					    	</div>
+					    </div>
+					    <a href="store.html">Store</a>
+					    <a class="selected" href="press.html">Press</a>
+					    <a href="order.html">Order</a>
+					    <a href="sales.html">Sales</a>
+					    <a href="contact.html">Contact</a> 
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<hr/>
+
+	<div class="press_content">
+		<div id="contact_text">
+			Press
+		</div>
+		<div class="press_container">
+			<div></div>
+			<div class="press_reviews">
+				<div class="best_cake">
+					“No cake made in any of the five boroughs of New York holds a candle to Prantl’s amazing <strong>burnt almond torte</strong>. It is possibly <strong>the BEST cake</strong> America has to offer.” 
+					<br/>
+					<a href="https://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html" target="_blank">- Huffington Post</a> 
+				</div>
+				<div class="reviews_nav">
+					<div class="reviewimg">
+						<a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" target="_blank">
+							<img src="images/yelp.png">
+						</a>
+					</div>
+					<div class="reviewimg">
+						<a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" target="_blank">
+							<img src="images/theknot.png">
+						</a>
+					</div>
+					<div class="reviewimg">
+						<a href="https://www.tripadvisor.com/Restaurant_Review-g53449-d822736-Reviews-Prantl_s_Bakery-Pittsburgh_Pennsylvania.html" target="_blank">
+							<img src="images/tripadvisor.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div></div>
+			<div class="press_youtube">
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iLhlZciMfoQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div></div>
+		</div>
+
+		<div id="content-gallery">
+		  	<div id="gallery">
+		  		<div id="galleryThumbnail">
+		  			<div id="thmbnlShadow">
+		  				<a class="leftborder" href="images/img1_wide.jpg" title="">
+		  					<img class="img_s" src="images/img1.jpg" alt="image 1"/>
+		  				</a>
+		  			</div>
+		  		</div>
+		  		<div id="galleryThumbnail">
+		  			<div id="thmbnlShadow">
+		  				<a href="images/img2_wide.jpg" title="">
+		  					<img class="img_s" src="images/img2.jpg" alt="image 2"/>
+		  				</a>
+		  			</div>
+		  		</div>
+		  		<div id="galleryThumbnail">
+		  			<div id="thmbnlShadow">
+		  				<a href="images/img3_wide.jpg" title="">
+		  					<img class="img_s" src="images/img3.jpg" alt="image 3"/>
+		  				</a>
+		  			</div>
+		  		</div>
+		  		<div id="galleryThumbnail">
+		  			<div id="thmbnlShadow">
+		  				<a class="rightborder"href="images/img4_wide.jpg" title="">
+		  					<img class="img_s" src="images/img4.jpg" alt="image 3"/>
+		  				</a>
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<p>click to see full images &#9757;</p>
+	  	</div>
+
+
+	</div> <!-- Close content -->
+	
+	<footer>
+		<hr/>
+		<br/>
+		<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook.png"></a>
+		<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+		<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+		<br/>
+		&hearts; Say Something Sweet &hearts;
+		<br/>
+		&hearts; &copy; Prantl's Bakery 2018 &hearts;<br/>
+		<a href="about.html">About</a>
+		<a href="catering.html">Catering</a>
+		<a href="store.html">Store</a>
+		<a href="press.html">Press</a>
+		<a href="order.html">Order</a>
+		<a href="sales.html">Sales</a>
+		<a href="contact.html">Contact</a> 
+	    <br/>
+	    <br/>
+	    <hr>
+	</footer>
+
+</div> <!-- Close container -->	
+</body>
+</html>
